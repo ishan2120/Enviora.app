@@ -1,0 +1,21 @@
+{
+  "name": "enviora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yoms25@github.com/ishan2120/Enviora.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ishan2120/Enviora/issues"
+  },
+  "homepage": "https://github.com/ishan2120/Enviora#readme"
+}
