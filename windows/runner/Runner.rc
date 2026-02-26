@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "envioraa" "\0"
+            VALUE "FileDescription", "enviora_profile" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "envioraa" "\0"
+            VALUE "InternalName", "enviora_profile" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "envioraa.exe" "\0"
-            VALUE "ProductName", "envioraa" "\0"
+            VALUE "OriginalFilename", "enviora_profile.exe" "\0"
+            VALUE "ProductName", "enviora_profile" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
