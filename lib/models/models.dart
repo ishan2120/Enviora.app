@@ -60,3 +60,50 @@ class SupervisorUpdate {
     required this.timestamp,
   });
 }
+
+enum TrackingStatus {
+  enRoute,
+  arrived,
+  delayed,
+}
+
+class VehicleLocation {
+  final String vehicleId;
+  final double latitude;
+  final double longitude;
+  final TrackingStatus status;
+  final int estimatedMinutes;
+  final String currentLocation;
+  final List<LocationPoint> routePath;
+
+  VehicleLocation({
+    required this.vehicleId,
+    required this.latitude,
+    required this.longitude,
+    required this.status,
+    required this.estimatedMinutes,
+    required this.currentLocation,
+    this.routePath = const [],
+  });
+
+  String get statusString {
+    switch (status) {
+      case TrackingStatus.enRoute:
+        return 'EN ROUTE';
+      case TrackingStatus.arrived:
+        return 'ARRIVED';
+      case TrackingStatus.delayed:
+        return 'DELAYED';
+    }
+  }
+}
+
+class LocationPoint {
+  final double latitude;
+  final double longitude;
+
+  LocationPoint({
+    required this.latitude,
+    required this.longitude,
+  });
+}

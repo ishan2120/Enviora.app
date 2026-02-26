@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../models/models.dart';
 import 'file_complaint_page.dart';
+import 'track_vehicle_page.dart';
 
 class MyReportsPage extends StatefulWidget {
   const MyReportsPage({super.key});
@@ -14,6 +15,7 @@ class _MyReportsPageState extends State<MyReportsPage> {
   ReportStatus? _selectedFilter;
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
+  int _currentNavIndex = 0;
 
   // Sample data - In a real app, this would come from a backend
   final List<Report> _allReports = [
@@ -215,11 +217,28 @@ class _MyReportsPageState extends State<MyReportsPage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: const Color(0xFF4CAF50),
         unselectedItemColor: Colors.grey,
-        currentIndex: 0,
+        currentIndex: _currentNavIndex,
+        onTap: (index) {
+          setState(() {
+            _currentNavIndex = index;
+          });
+          if (index == 2) {
+            // Navigate to Track Vehicle page
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const TrackVehiclePage(),
+              ),
+            );
+          }
+        },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'HOME'),
           BottomNavigationBarItem(icon: Icon(Icons.book), label: 'GUIDE'),
-          BottomNavigationBarItem(icon: Icon(Icons.map), label: 'MAP'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.location_on),
+            label: 'TRACK',
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'PROFILE'),
         ],
       ),
