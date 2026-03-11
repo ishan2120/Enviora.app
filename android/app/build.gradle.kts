@@ -6,7 +6,11 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.example.enviora_1"
+=======
+    namespace = "com.example.enviora_profile"
+>>>>>>> 161edf8d05df62359823b7e99508f080622ba730
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -21,7 +25,11 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+<<<<<<< HEAD
         applicationId = "com.example.enviora_1"
+=======
+        applicationId = "com.example.enviora_profile"
+>>>>>>> 161edf8d05df62359823b7e99508f080622ba730
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

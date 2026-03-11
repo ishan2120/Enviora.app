@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "enviora_1",
     "short_name": "enviora_1",
+=======
+    "name": "enviora_profile",
+    "short_name": "enviora_profile",
+>>>>>>> 161edf8d05df62359823b7e99508f080622ba730
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

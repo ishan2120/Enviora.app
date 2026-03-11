@@ -5,10 +5,17 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
+<<<<<<< HEAD
 PRODUCT_NAME = enviora_1
 
 // The application's bundle identifier
 PRODUCT_BUNDLE_IDENTIFIER = com.example.enviora1
+=======
+PRODUCT_NAME = enviora_profile
+
+// The application's bundle identifier
+PRODUCT_BUNDLE_IDENTIFIER = com.example.envioraProfile
+>>>>>>> 161edf8d05df62359823b7e99508f080622ba730
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2026 com.example. All rights reserved.

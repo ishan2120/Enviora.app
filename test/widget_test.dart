@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // This is a basic Flutter widget test.
 //
 // To perform an interaction with a widget in your test, use the WidgetTester
@@ -26,5 +27,18 @@ void main() {
     // Verify that our counter has incremented.
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
+=======
+import 'package:flutter_test/flutter_test.dart';
+import 'package:enviora_profile/main.dart';
+
+void main() {
+  testWidgets('App launches and shows Profile screen',
+      (WidgetTester tester) async {
+    await tester.pumpWidget(const EnvioraApp());
+    await tester.pump();
+
+    // The app should launch and show the Profile screen
+    expect(find.text('Profile'), findsOneWidget);
+>>>>>>> 161edf8d05df62359823b7e99508f080622ba730
   });
 }

@@ -1,10 +1,18 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
+<<<<<<< HEAD
 project(enviora_1 LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
 set(BINARY_NAME "enviora_1")
+=======
+project(enviora_profile LANGUAGES CXX)
+
+# The name of the executable created for the application. Change this to change
+# the on-disk name of your application.
+set(BINARY_NAME "enviora_profile")
+>>>>>>> 161edf8d05df62359823b7e99508f080622ba730
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

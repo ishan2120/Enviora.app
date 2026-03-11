@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: enviora_1
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
@@ -35,10 +36,29 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+=======
+name: enviora_profile
+description: Enviora waste management app profile page.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  image_picker: ^1.2.1
+  intl: ^0.19.0
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.0
+>>>>>>> 161edf8d05df62359823b7e99508f080622ba730
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+<<<<<<< HEAD
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -88,3 +108,12 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+=======
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+>>>>>>> 161edf8d05df62359823b7e99508f080622ba730
